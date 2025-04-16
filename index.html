@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dappr Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <button class="collapse-btn" onclick="toggleSidebar()">☰</button>
+            <a href="#"><span class="icon">🏠</span><span class="text">Home</span></a>
+            <a href="#"><span class="icon">📧</span><span class="text">Email</span></a>
+            <a href="#"><span class="icon">📊</span><span class="text">Charts</span></a>
+            <a href="#"><span class="icon">💰</span><span class="text">Finance</span></a>
+            <a href="#"><span class="icon">⚙️</span><span class="text">Settings</span></a>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>Good morning, James!</h1>
+                <div class="profile"><img
+                        src="https://th.bing.com/th/id/OIP.jIJk6G1IJl8EH4OluJ1EowHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="Profile"></div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h2>$143,624</h2>
+                    <p>Your bank balance</p>
+                </div>
+                <div class="card">
+                    <h2>12</h2>
+                    <p>Uncategorized transactions</p>
+                </div>
+                <div class="card">
+                    <h2>7</h2>
+                    <p>Employees working today</p>
+                </div>
+                <div class="card">
+                    <h2>$3,287.49</h2>
+                    <p>This week's card spending</p>
+                </div>
+
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card">
+                        <h2>54</h2>
+                        <p>New clients <span style="color: green;">+18.7%</span></p>
+                    </div>
+                    <div class="card">
+                        <h2>6</h2>
+                        <p>Invoices overdue <span style="color: pink;">+2.7%</span></p>
+                    </div>
+                </div>
+                <div class="chart">
+                    <p>Revenue</p>
+                    <canvas id="revenueChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="emails">
+                <h3>Recent emails</h3>
+                <div class="email-item">
+                    <img src="https://th.bing.com/th/id/OIP.27ej4q73QH0SZeQ3RMb9IgHaEO?w=271&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="Hannah">
+                    <div>
+                        <p>Hannah Morgan</p>
+                        <small>Meeting scheduled - 1:24 PM</small>
+                    </div>
+                </div>
+                <div class="email-item">
+                    <img src="https://br.web.img2.acsta.net/pictures/19/04/29/20/14/1886009.jpg" alt="Megan">
+                    <div>
+                        <p>Megan Clark</p>
+                        <small>Update on marketing campaign - 12:32 PM</small>
+                    </div>
+                </div>
+                <div class="email-item">
+                    <img src="https://th.bing.com/th/id/OIP.CROzozeUUeZmF6cmhvOUFQHaJQ?w=119&h=186&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="Brandon">
+                    <div>
+                        <p>Brandon Williams</p>
+                        <small>Design v2.0 is about to launch - Yesterday at 8:57 PM</small>
+                    </div>
+                </div>
+                <div class="email-item">
+                    <img src="https://th.bing.com/th/id/OIP.b0msyJc_DNgFievb5nCFngHaH0?w=143&h=186&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="Reid">
+                    <div>
+                        <p>Reid Smith</p>
+                        <small>My friend Julie loves Dappr! - Yesterday at 8:49 PM</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="status">
+                <h3>Formation status</h3>
+                <p>In progress</p>
+                <p>Estimated processing 4-5 business days</p>
+                <button>View status</button>
+            </div>
+            <div class="todo">
+                <h3>Your to-Do list</h3>
+                <ul>
+                    <li>Run payroll - Mar 4 at 6:00 pm</li>
+                    <li>Review time off request - Mar 7 at 6:00 pm</li>
+                    <li>Sign board resolution - Mar 12 at 6:00 pm</li>
+                    <li>Finish onboarding Tony - Mar 12 at 6:00 pm</li>
+                </ul>
+            </div>
+            <div class="board">
+                <p style="color: green;">Feb 22 at 6:00 PM</p>
+                <p>You have been invited to attend a meeting of the Board Directors.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
