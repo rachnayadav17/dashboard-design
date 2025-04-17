@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.querySelector('.toggle-btn');
     const sidebar = document.querySelector('aside.sidebar');
